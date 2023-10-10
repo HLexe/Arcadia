@@ -1,0 +1,183 @@
+@font-face {
+    font-family: 'Coolvetica';
+    src: url('../fonts/coolvetica-condensed.otf');
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Coolvetica';
+}
+body{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 70px auto 40px;
+    grid-template-areas: 
+    "header header header header header"
+    "none main main main aside"
+    "none main main main aside"
+    "footer footer footer footer footer";
+    background-image: url('../images/city.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -100000;
+}
+header img{
+    width: 150px;
+    height: 100px;
+}
+header{
+    grid-area: header;
+    padding: 0px 1px;
+    width: 100%;
+    height: 70px;
+    background-color: rgba(255, 255, 255, 0.022);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    }
+header ul{
+   list-style-type: none; 
+   display: flex;
+   justify-content: flex-end;
+   align-items: flex-end; 
+}
+header .menu-item a{
+    text-decoration: none;
+    color: #f28705;
+    font-size: 18px;
+    padding: 0px 10px;
+}
+main{
+    grid-area: main;
+}    
+.thumb{
+    padding: 0px 100px 0 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+.video-banner{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.thumbnails{
+    padding: 10px;
+    height: 200px;
+    width: 200px;
+}
+.large-thumbnails{
+    padding: 10px 10px;
+    height: 300;
+    width: 200;
+}
+.title{
+    padding: 10px 0px;
+    color: #f28705;
+    font-size: 36;
+    font-weight: 4600;
+    display: flex;
+    justify-content: center
+}
+p{
+    padding: 10px;
+    color: #ffdc71;
+    font-size: 24;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+}
+footer{
+    grid-area: footer;
+}
+footer p{
+    color: #f28705;
+    font-size: 16;
+}
+div p{
+    font-size: 30;
+}
+div h2{
+    padding: 5px;
+    font-size: 24;
+    color: #f28705;
+    display: flex;
+    justify-content: center;
+}
+form{
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.060);
+    width: 100%;
+}
+.newsletter-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    color: #f28705;
+}
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+textarea{
+    height: 200px;
+    width: 400px;
+}
+input[type=text]{
+    width: 250px;
+}
+.name{
+    color: #f28705;
+}
+.email{
+    color: #f28705;
+}
+h2{
+    color: #f28705;
+}
+.btn{
+    color: black;
+    background-color: lightgray;
+    border-color: gray;
+}
+@media (max-width: 480px){
+    header{
+        height: 120px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    main{
+        margin-top: 70;
+    }
+    .video-banner{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    textarea{
+        height: 150px;
+        width: 250;
+    }
+    #email{
+        width: 150;
+    }
+    #name{
+        width: 150;
+    }
+}
