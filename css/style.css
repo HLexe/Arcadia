@@ -24,6 +24,7 @@ body{
     z-index: -100000;
 }
 header img{
+    margin-left: 50px;
     width: 150px;
     height: 100px;
 }
