@@ -17,7 +17,7 @@ body{
     "none main main main aside"
     "none main main main aside"
     "footer footer footer footer footer";
-    background-image: url('../images/city.jpg');
+    background-image: url('../images/flatline.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -50,7 +50,7 @@ header ul{
 }
 header .menu-item a{
     text-decoration: none;
-    color: #f28705;
+    color: #f57c00;
     font-size: 24px;
     padding: 0px 10px;
 }
@@ -83,7 +83,7 @@ main{
 }
 .title{
     padding: 10px 0px;
-    color: #f28705;
+    color: #f57c00;
     font-size: 36;
     font-weight: 4600;
     display: flex;
@@ -91,7 +91,7 @@ main{
 }
 p{
     padding: 10px;
-    color: #ffdc71;
+    color: #ffc107;
     font-size: 24;
     font-weight: 400;
     display: flex;
@@ -101,7 +101,7 @@ footer{
     grid-area: footer;
 }
 footer p{
-    color: #f28705;
+    color: #f57c00;
     font-size: 16;
 }
 div p{
@@ -110,7 +110,7 @@ div p{
 div h2{
     padding: 5px;
     font-size: 24;
-    color: #f28705;
+    color: #f57c00;
     display: flex;
     justify-content: center;
 }
@@ -126,7 +126,7 @@ form{
     align-items: center;
 }
 h1{
-    color: #f28705;
+    color: #f57c00;
 }
 .contact-container{
     display: flex;
@@ -142,13 +142,15 @@ input[type=text]{
     width: 250px;
 }
 .name{
-    color: #f28705;
+    color: #f57c00;
+    font-size: 24;
 }
 .email{
-    color: #f28705;
+    color: #f57c00;
+    font-size: 24;
 }
 h2{
-    color: #f28705;
+    color: #f57c00;
 }
 .btn{
     color: black;
@@ -174,14 +176,14 @@ h2{
 .product-name{
     padding: 0px;
     text-decoration: none;
-    color: #f28705;
+    color: #f57c00;
     font-size: 24px;
     display: flex;
     justify-content: center;
 }
 .product-price{
     padding: 0px;
-    color: #ffdc71;
+    color: #ffc107;
     font-size: 20;
     font-weight: 400;
 }
@@ -197,6 +199,40 @@ h2{
 .card-footer{
     padding: 0px;
 }
+@media (max-width: 360px){
+    header{
+        height: 120px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header .menu-item a{
+        text-decoration: none;
+        color: #f57c00;
+        font-size: 16px;
+        padding: 0px 10px;
+    }
+    main{
+        margin-top: 100px;
+    }
+    .video-banner{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    textarea{
+        height: 150px;
+        width: 250;
+    }
+    #email{
+        width: 150;
+    }
+    #name{
+        width: 150;
+    }
+    
+}
 @media (max-width: 480px){
     header{
         height: 120px;
@@ -205,8 +241,9 @@ h2{
         justify-content: space-between;
         align-items: center;
     }
+    
     main{
-        margin-top: 70;
+        margin-top: 100px;
     }
     .video-banner{
         width: 100%;
