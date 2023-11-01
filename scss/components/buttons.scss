@@ -1,9 +1,9 @@
 .btn{
     border: none;
     color: $primary-color;
-    background-color: #490a18;
+    background-color: $tertiary-color;
     &:hover{
         color: $primary-color;
-        background-color: #27060d;
+        background-color: $quaternary-color;
     }
 }
