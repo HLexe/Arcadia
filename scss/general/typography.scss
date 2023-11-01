@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:wght@500&display=swap');
+}
+
+h1,h2,h3,h4,h5,h6,p,a,label{
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+    padding: 10px 0px;
+    font-size: 40;
+    font-weight: 500;
+    display: flex;
+    justify-content: center
+}
+.btn{
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+    font-size: 20;
+    font-weight: 500;
+}

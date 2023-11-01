@@ -1,0 +1,32 @@
+footer{
+    grid-area: footer;
+
+    form{
+        .form-labels{
+            display: flex;
+            justify-content: center;
+            font-size: 24px;
+            padding: 0px 0px 10px 0px;
+            color: $primary-color;
+            
+        }
+        background-color: rgba(255, 255, 255, 0.060);
+        width: 100%;
+    }
+    .newsletter-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    h2{
+        margin: 0px;
+        padding: 0px;
+    }     
+    p{
+        display: flex;
+        justify-content: flex-start;
+        color: $primary-color;
+        font-size: 24px;
+        margin-bottom: 0px;
+    }
+}
