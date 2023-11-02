@@ -1,3 +1,4 @@
+
 header{
     grid-area: header;
     width: 100%;
@@ -19,6 +20,8 @@ header{
         align-items: flex-end;
         animation: fadeInRight;
         animation-duration: 750ms;
+        margin-bottom: 0;
+        padding: 0;
         a{
             text-decoration: none;
             color: $primary-color;
@@ -30,5 +33,33 @@ header{
         margin-left: 50px;
         width: 150px;
         height: 100px;
+    }
+    
+}
+@include mobile {
+    
+    body{
+        margin-top: 80px;
+    }
+    header{
+        height: 140px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+            a{
+                text-decoration: none;
+                color: #f57c00;
+                font-size: 16px;
+                padding: 0px 10px;
+            }
+            img{
+                margin-left: 0px;
+    
+            }
+    main{
+            margin-left: 0px;
+        }
+    
     }
 }
