@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:wght@600&display=swap");
 * {
   margin: 0px;
   padding: 0px;
@@ -12,10 +13,6 @@ p {
   color: #ffc107;
 }
 
-@font-face {
-  font-family: "Sofia Sans Extra Condensed", sans-serif;
-  src: url("https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:wght@500&display=swap");
-}
 h1, h2, h3, h4, h5, h6, p, a, label {
   font-family: "Sofia Sans Extra Condensed", sans-serif;
   padding: 10px 0px;
@@ -74,16 +71,18 @@ header ul a {
 }
 header img {
   margin-left: 50px;
-  width: 150px;
-  height: 100px;
+  width: 100px;
+  height: 50px;
+  animation: fadeInLeft;
+  animation-duration: 1s;
 }
 
 @media (max-width: 576px) {
   body {
-    margin-top: 80px;
+    margin-top: 50px;
   }
   header {
-    height: 140px;
+    height: 100px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -97,8 +96,33 @@ header img {
   }
   header img {
     margin-left: 0px;
+    padding-top: 5px;
+    animation: fadeInDown;
+    animation-duration: 750ms;
   }
-  header main {
+  header ul {
+    animation: fadeInDown;
+    animation-duration: 750ms;
+  }
+}
+@media (max-width: 360px) {
+  body {
+    margin-top: 80px;
+  }
+  header {
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header a {
+    text-decoration: none;
+    color: #f57c00;
+    font-size: 16px;
+    padding: 0px 10px;
+  }
+  header img {
     margin-left: 0px;
   }
 }
@@ -195,7 +219,6 @@ main .back-to-top:hover span {
 }
 main .about-logo {
   width: 100%;
-  height: 50%;
   display: flex;
   justify-content: center;
   animation: fadeIn;
@@ -233,6 +256,14 @@ footer p {
   margin-bottom: 0px;
 }
 
+@media (max-width: 576px) {
+  footer {
+    height: 50px;
+  }
+  footer h2 {
+    font-size: 30px;
+  }
+}
 body {
   display: grid;
   grid-template-columns: repeat(5, 1fr);

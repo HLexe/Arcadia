@@ -31,18 +31,49 @@ header{
     }
     img{
         margin-left: 50px;
-        width: 150px;
-        height: 100px;
+        width: 100px;
+        height: 50px;
+        animation: fadeInLeft;
+        animation-duration: 1s;
     }
     
 }
 @include mobile {
+    body{
+        margin-top: 50px;
+    }
+    header{
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+            a{
+                text-decoration: none;
+                color: #f57c00;
+                font-size: 16px;
+                padding: 0px 10px;
+            }
+            img{
+                margin-left: 0px;
+                padding-top: 5px;
+                animation: fadeInDown;
+                animation-duration: 750ms;
     
+            }
+            ul{
+                animation: fadeInDown;
+                animation-duration: 750ms;
+            }
+    
+    }
+}
+@include small {
     body{
         margin-top: 80px;
     }
     header{
-        height: 140px;
+        height: 120px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -57,9 +88,5 @@ header{
                 margin-left: 0px;
     
             }
-    main{
-            margin-left: 0px;
-        }
-    
     }
 }
