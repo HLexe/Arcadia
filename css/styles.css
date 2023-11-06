@@ -74,7 +74,7 @@ header img {
   width: 100px;
   height: 50px;
   animation: fadeInLeft;
-  animation-duration: 1s;
+  animation-duration: 500ms;
 }
 
 @media (max-width: 576px) {
@@ -223,6 +223,12 @@ main .about-logo {
   justify-content: center;
   animation: fadeIn;
   animation-duration: 1.5s;
+}
+main ul li {
+  padding: 0;
+  list-style-type: none;
+  font-size: 26px;
+  color: #ffc107;
 }
 
 footer {

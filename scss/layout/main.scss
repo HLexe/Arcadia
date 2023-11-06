@@ -19,81 +19,89 @@ main{
             justify-content: center;
             color: $primary-color;
             font-size: 24px;
-    }
-        #large-cards{
-            padding-top: 10px;
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: row;
-            justify-content: center;
-            justify-content: space-around;
-    }
-        #small-cards{
-            padding-top: 10px;
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: row;
-            justify-content: center;
-            justify-content: space-around;
-    }
-        .product-name{
-            padding: 0px;
-            text-decoration: none;
-            color: $primary-color;
-            font-size: 24px;
-            display: flex;
-            justify-content: center;
-    }
-        .product-price{
-            padding: 0px;
-            color: $secondary-color;
-            font-size: 20;
-            font-weight: 400;
-            display: flex;
-            justify-content: center;
-    }
-        .card{
-            background-color: rgba(255, 255, 255, 0.090);
-            margin: 10px 0px;
-    }
-        .card-align{
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-    }
-        .card-footer{
-            padding: 0px;
-    }
-        .back-to-top{
-            position: fixed;
-            bottom: 20px;
-            right: 30px;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            background-color: $primary-color;
-            border-radius: 4px;
-            padding: 5px;
-            text-decoration: none;
-            transition: 0.3 ease-in-out;
-    }
-        .back-to-top span{
-            color: $tertiary-color;
-            transition: 0.3 ease-in-out;
-    }
-        .back-to-top:hover{
-            background-color: $secondary-color;
-    }
-        .back-to-top:hover span{
-            transform: translateY(-2px);
-            transition-duration: 250ms;
-    
-    }
-        .about-logo{
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            animation: fadeIn;
-            animation-duration: 1.5s;
-    }
+        }
+            #large-cards{
+                padding-top: 10px;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                justify-content: center;
+                justify-content: space-around;
+        }
+            #small-cards{
+                padding-top: 10px;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                justify-content: center;
+                justify-content: space-around;
+        }
+            .product-name{
+                padding: 0px;
+                text-decoration: none;
+                color: $primary-color;
+                font-size: 24px;
+                display: flex;
+                justify-content: center;
+        }
+            .product-price{
+                padding: 0px;
+                color: $secondary-color;
+                font-size: 20;
+                font-weight: 400;
+                display: flex;
+                justify-content: center;
+        }
+            .card{
+                background-color: rgba(255, 255, 255, 0.090);
+                margin: 10px 0px;
+        }
+            .card-align{
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+        }
+            .card-footer{
+                padding: 0px;
+        }
+            .back-to-top{
+                position: fixed;
+                bottom: 20px;
+                right: 30px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                background-color: $primary-color;
+                border-radius: 4px;
+                padding: 5px;
+                text-decoration: none;
+                transition: 0.3 ease-in-out;
+        }
+            .back-to-top span{
+                color: $tertiary-color;
+                transition: 0.3 ease-in-out;
+        }
+            .back-to-top:hover{
+                background-color: $secondary-color;
+        }
+            .back-to-top:hover span{
+                transform: translateY(-2px);
+                transition-duration: 250ms;
+        
+        }
+            .about-logo{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                animation: fadeIn;
+                animation-duration: 1.5s;
+        }
+    ul{
+        li{
+        padding: 0;
+        list-style-type: none;
+        font-size: 26px;
+        color: $secondary-color;
+         }
+     }
 }
