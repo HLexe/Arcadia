@@ -1,12 +1,4 @@
 body{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 80px auto 40px;
-    grid-template-areas: 
-    "header header header header header"
-    "none main main main aside"
-    "none main main main aside"
-    "footer footer footer footer footer";
     background-image: url('../images/flatline.jpg');
     background-repeat: no-repeat;
     background-size: cover;
