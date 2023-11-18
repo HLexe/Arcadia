@@ -28,11 +28,3 @@ footer{
         margin-bottom: 0px;
     }
 }
-@include mobile{
-    footer{
-        height: 50px;
-            h2{
-                font-size: 30px;
-            }
-    }
-}

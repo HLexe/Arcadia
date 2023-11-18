@@ -70,18 +70,18 @@ header ul a {
 }
 header img {
   margin-left: 50px;
-  width: 150px;
-  height: 100px;
+  width: 100px;
+  height: 50px;
   animation: fadeInLeft;
-  animation-duration: 750ms;
+  animation-duration: 500ms;
 }
 
 @media (max-width: 576px) {
   body {
-    margin-top: 140px;
+    margin-top: 50px;
   }
   header {
-    height: 130px;
+    height: 100px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -95,6 +95,7 @@ header img {
   }
   header img {
     margin-left: 0px;
+    padding-top: 5px;
     animation: fadeInDown;
     animation-duration: 750ms;
   }
@@ -102,16 +103,13 @@ header img {
     animation: fadeInDown;
     animation-duration: 750ms;
   }
-  header main {
-    margin-left: 0px;
-  }
 }
 @media (max-width: 360px) {
   body {
-    margin-top: 120px;
+    margin-top: 80px;
   }
   header {
-    height: 170px;
+    height: 120px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -126,28 +124,14 @@ header img {
   header img {
     margin-left: 0px;
   }
-  header main {
-    margin-left: 0px;
-  }
 }
 main {
-  margin-top: 75px;
-  margin-left: 20px;
-  margin-right: 20px;
   min-height: 80vh;
 }
 main .video-banner {
   width: 100%;
   display: flex;
   justify-content: center;
-}
-main li {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  text-decoration: none;
-  color: #ffc107;
-  font-size: 26px;
 }
 main p {
   font-size: 26px;
@@ -232,12 +216,17 @@ main .back-to-top:hover span {
   transition-duration: 250ms;
 }
 main .about-logo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
   animation: fadeIn;
   animation-duration: 1.5s;
+}
+main ul li {
+  padding: 0;
+  list-style-type: none;
+  font-size: 26px;
+  color: #ffc107;
 }
 
 footer form {
@@ -268,6 +257,14 @@ footer p {
   margin-bottom: 0px;
 }
 
+@media (max-width: 576px) {
+  footer {
+    height: 50px;
+  }
+  footer h2 {
+    font-size: 30px;
+  }
+}
 body {
   background-image: url("../images/flatline.jpg");
   background-repeat: no-repeat;
@@ -276,4 +273,4 @@ body {
   z-index: -100000;
 }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=style.css.map */
