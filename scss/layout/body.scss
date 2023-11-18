@@ -5,3 +5,15 @@ body{
     background-attachment: fixed;
     z-index: -100000;
 }
+@include small{
+    body{
+        background-image: linear-gradient(to bottom, $quaternary-color, $tertiary-color);
+        background-position: right 170px;
+    }
+}
+@include mobile{
+    body{
+        background-image: linear-gradient(to bottom, $quaternary-color, $tertiary-color);
+        background-position: right 130px;
+    }
+}
