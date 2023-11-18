@@ -132,8 +132,8 @@ header img {
 }
 main {
   margin-top: 75px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
   min-height: 80vh;
 }
 main .video-banner {
@@ -240,6 +240,22 @@ main .about-logo {
   animation-duration: 1.5s;
 }
 
+@media (max-width: 393px) {
+  main {
+    margin-top: 75px;
+    margin-left: 30px;
+    margin-right: 30px;
+    min-height: 80vh;
+  }
+}
+@media (max-width: 576px) {
+  main {
+    margin-top: 75px;
+    margin-left: 40px;
+    margin-right: 40px;
+    min-height: 80vh;
+  }
+}
 footer form {
   background-color: rgba(255, 255, 255, 0.06);
   width: 100%;

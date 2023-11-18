@@ -1,7 +1,7 @@
 main{
     margin-top: 75px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
     min-height: 80vh;
         .video-banner{
             width: 100%;
@@ -108,4 +108,20 @@ main{
             animation-duration: 1.5s;
         }
     
+}
+@include small {
+    main{
+        margin-top: 75px;
+         margin-left: 30px;
+        margin-right: 30px;
+        min-height: 80vh;
+    }
+}
+@include mobile {
+    main{
+        margin-top: 75px;
+        margin-left: 40px;
+        margin-right: 40px;
+        min-height: 80vh;
+    }
 }
