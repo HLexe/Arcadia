@@ -5,7 +5,7 @@
 }
 
 @mixin small {
-    @media (max-width: 360px){
+    @media (max-width: 393px){
         @content;
     }
 }

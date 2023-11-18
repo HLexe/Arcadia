@@ -106,7 +106,7 @@ header img {
     margin-left: 0px;
   }
 }
-@media (max-width: 360px) {
+@media (max-width: 393px) {
   body {
     margin-top: 180px;
   }
@@ -276,7 +276,7 @@ body {
   z-index: -100000;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 393px) {
   body {
     background-image: linear-gradient(to bottom, #25040b, #490a18);
     background-position: right 170px;
