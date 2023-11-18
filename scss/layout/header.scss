@@ -17,7 +17,7 @@ header{
         display: flex;
         justify-content: flex-end;
         align-items: flex-end;
-        animation: fadeInRight;
+        animation: fadeInDown;
         animation-duration: 750ms;
         margin-bottom: 0;
         padding: 0;
@@ -32,8 +32,8 @@ header{
         margin-left: 50px;
         width: 150px;
         height: 100px;
-        animation: fadeInLeft;
-        animation-duration: 750ms;
+        animation: fadeInDown;
+        animation-duration: 650ms;
     }
     
 }

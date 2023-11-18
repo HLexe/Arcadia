@@ -16,7 +16,7 @@ p {
 h1, h2, h3, h4, h5, h6, p, a, label {
   font-family: "Sofia Sans Extra Condensed", sans-serif;
   padding: 10px 0px;
-  font-size: 40;
+  font-size: 50;
   font-weight: 500;
   display: flex;
   justify-content: center;
@@ -57,7 +57,7 @@ header ul {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  animation: fadeInRight;
+  animation: fadeInDown;
   animation-duration: 750ms;
   margin-bottom: 0;
   padding: 0;
@@ -72,8 +72,8 @@ header img {
   margin-left: 50px;
   width: 150px;
   height: 100px;
-  animation: fadeInLeft;
-  animation-duration: 750ms;
+  animation: fadeInDown;
+  animation-duration: 650ms;
 }
 
 @media (max-width: 576px) {
@@ -132,8 +132,8 @@ header img {
 }
 main {
   margin-top: 75px;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 150px;
+  margin-right: 150px;
   min-height: 80vh;
 }
 main .video-banner {
