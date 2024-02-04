@@ -17,10 +17,29 @@
 
 //ALGORITMO CICLO MUUUUUUY BASICO
 
-for (let xp = 1; xp < 11; xp+=1){
-    if (xp === 11) {
-        break;
+// for (let xp = 1; xp < 11; xp+=1){
+//     if (xp === 11) {
+//         break;
+//     }
+//     console.log('XP ' + xp);
+// }
+// console.log('LVL UP!!!')
+
+alert('Por favor identifiquese.');
+
+let nombre = prompt('Ingrese Nombre');
+let apellido = prompt('Ingrese Apellido');
+
+alert('Por favor ingrese numero de ID y PIN');
+
+function solicitarNumeroId(){
+    let numeroId = prompt('Ingrese ID');
+    let pin = prompt('Ingrese PIN');
+
+    if(numeroId ==='1234' && pin ==='4321'){
+        alert('Bienvenido ' + nombre + ' ' + apellido + '.');
+    }else if(numeroId !='' && pin !=''){
+        alert('Informacion incorrecta, intente nuevamente.');
     }
-    console.log('XP ' + xp);
 }
-console.log('LVL UP!!!')
+solicitarNumeroId()
