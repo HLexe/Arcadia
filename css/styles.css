@@ -75,6 +75,13 @@ header img {
   animation: fadeInDown;
   animation-duration: 650ms;
 }
+header .material-icons {
+  color: #ffc107;
+}
+header .item-quantity {
+  margin-right: 25px;
+  color: red;
+}
 
 @media (max-width: 576px) {
   body {

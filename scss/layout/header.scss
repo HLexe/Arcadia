@@ -35,6 +35,13 @@ header{
         animation: fadeInDown;
         animation-duration: 650ms;
     }
+    .material-icons{
+        color: $secondary-color;
+    }
+    .item-quantity{
+        margin-right: 25px;
+        color: red;
+    }
     
 }
 @include mobile {
