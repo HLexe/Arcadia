@@ -4,30 +4,30 @@
 
 const ITEM =[
 
-    {id: 1, name: "raccoon", image: "../images/", price: 8.000 },
-    {id: 2, name: "monke", image: "../images/", price: 8.000 },
-    {id: 3, name: "cat", image: "../images/", price: 8.000 },
-    {id: 4, name: "trooper", image: "../images/", price: 8.000 },
-    {id: 5, name: "deathstar", image: "../images/", price: 8.000 },
-    {id: 6, name: "daft", image: "../images/", price: 8.000 },
-    {id: 7, name: "car", image: "../images/", price: 8.000 },
-    {id: 8, name: "retro", image: "../images/", price: 8.000 },
-    {id: 9, name: "pacman", image: "../images/", price: 10.000 },
-    {id: 10, name: "cyberpunk", image: "../images/", price: 10.000 },
-    {id: 11, name: "netrunner", image: "../images/", price: 10.000 },
-    {id: 12, name: "synthcity", image: "../images/", price: 10.000 },
-    {id: 13, name: "arasaka", image: "../images/", price: 10.000 },
-    {id: 14, name: "bladerunner", image: "../images/", price: 10.000 },
-    {id: 15, name: "bladerunner2", image: "../images/", price: 10.000 },
-    {id: 16, name: "cyberpunk2", image: "../images/", price: 10.000 },
-    {id: 17, name: "cybercat", image: "../images/", price: 10.000 },
-    {id: 18, name: "cyberpunkGirl", image: "../images/", price: 10.000 },
-    {id: 19, name: "cyberpunkGirl2", image: "../images/", price: 10.000 },
-    {id: 20, name: "samurai", image: "../images/", price: 10.000 },
-    {id: 21, name: "maelstrom", image: "../images/", price: 10.000 },
-    {id: 22, name: "samurai2", image: "../images/", price: 10.000 },
-    {id: 23, name: "traumaTeam", image: "../images/", price: 10.000 },
-    {id: 24, name: "tron", image: "../images/", price: 10.000 }
+    {id: 1, name: "raccoon", image: "../images/synthraccoon.jpg", price: 8.000 },
+    {id: 2, name: "monke", image: "../images/synthmonke.jpg", price: 8.000 },
+    {id: 3, name: "cat", image: "../images/synthcat.jpg", price: 8.000 },
+    {id: 4, name: "trooper", image: "../images/synthtrooper.jpg", price: 8.000 },
+    {id: 5, name: "deathstar", image: "../images/synthdeathstar.jpg", price: 8.000 },
+    {id: 6, name: "daft", image: "../images/daft.jpg", price: 8.000 },
+    {id: 7, name: "car", image: "../images/synthcar.jpg", price: 8.000 },
+    {id: 8, name: "retro", image: "../images/retro.jpg", price: 8.000 },
+    {id: 9, name: "pacman", image: "../images/pacman.jpg", price: 10.000 },
+    {id: 10, name: "cyberpunk", image: "../images/cybersynth.jpg", price: 10.000 },
+    {id: 11, name: "netrunner", image: "../images/netrunner.jpg", price: 10.000 },
+    {id: 12, name: "synthcity", image: "../images/synthcity.jpg", price: 10.000 },
+    {id: 13, name: "arasaka", image: "../images/arasaka.jpg", price: 10.000 },
+    {id: 14, name: "bladerunner", image: "../images/bladerunner.jpg", price: 10.000 },
+    {id: 15, name: "bladerunner2", image: "../images/bladerunner2.jpg", price: 10.000 },
+    {id: 16, name: "cyberpunk2", image: "../images/cyber.jpg", price: 10.000 },
+    {id: 17, name: "cybercat", image: "../images/cybercat.jpg", price: 10.000 },
+    {id: 18, name: "cyberpunkGirl", image: "../images/cybergirl.jpg", price: 10.000 },
+    {id: 19, name: "cyberpunkGirl2", image: "../images/cybergirl2.jpg", price: 10.000 },
+    {id: 20, name: "samurai", image: "../images/cybersamurai.jpg", price: 10.000 },
+    {id: 21, name: "maelstrom", image: "../images/maelstrom.jpg", price: 10.000 },
+    {id: 22, name: "samurai2", image: "../images/samurai.jpg", price: 10.000 },
+    {id: 23, name: "traumaTeam", image: "../images/traumateam.jpg", price: 10.000 },
+    {id: 24, name: "tron", image: "../images/tron.jpg", price: 10.000 }
 
 ]
 
@@ -38,7 +38,7 @@ let cart = JSON.parse(localStorage.getItem('cart') )|| [];
 //COUNTER
 
 function updateCartIcon(){
-    const CART_ICON = document.getElementById('cartItemsQuantity');
+    const CART_ICON = document.getElementById('items-quantity');
     if(CART_ICON){
         CART_ICON.textContent = cartItemsQuantity;
     }
@@ -50,11 +50,12 @@ function showCartItems(){
     const CART_ITEMS = document.getElementById('cart-items');
     CART_ITEMS.innerHTML = '';
 
-    cart.forEach(ITEMS => {
-        const ITEM= document.createElement('div');
-        item.textContent = ITEMS.nombre;
+    cart.forEach(ITEM => {
+        const ITEM = document.createElement('div');
+        ITEM.textContent = ITEM.name;
+        CART_ITEMS.appendChild(ITEM);
     });
-   CART_ITEMS.appendChild(ITEMS);
+   
 }
 
 //CARDS
@@ -67,35 +68,35 @@ function createItemCard(){
         CARD.classList.add('item-card');
 
 
-        const imagen = document.createElement('img');
+        const image = document.createElement('img');
         image.src = ITEM.image;
-        image.alt = ITEM.nombre;
+        image.alt = ITEM.name;
         image.classList.add('item-image');
-        card.appendChild(image);
+        CARD.appendChild(image);
         const NAME = document.createElement('h3');
         NAME.textContent = ITEM.name;
         NAME.classList.add('item-name');
         CARD.appendChild(NAME);
 
         const PRICE = document.createElement('p');
-        prrice.textContent = ITEM.price;
-        price.classList.add('item-price');
-        card.appendChild(price);
+        PRICE.textContent = ITEM.price;
+        PRICE.classList.add('item-price');
+        CARD.appendChild(PRICE);
 
-        const buyBtn = document.createElement('button');
-        buyBtn.textContent = 'Agregar Item';
-        buyBtn.classList.add('buy-button');
-        buyBtn.addEventListener('click',()=>{
-            cart.push(ITEM); //agregamos el producto al carrito :D
+        const BUY_BTN = document.createElement('button');
+        BUY_BTN.textContent = 'Agregar Item';
+        BUY_BTN.classList.add('buy-button');
+        BUY_BTN.addEventListener('click',()=>{
+            cart.push(ITEM);
             localStorage.setItem('cart', JSON.stringify(cart));
             cartItemsQuantity++;
             updateCartIcon();
             showCartItems();
         })
 
-        .appendChild(buyBtn)
+        CARD.appendChild(BUY_BTN)
 
-        CONTAINER.appendChild(card);
+        CONTAINER.appendChild(CARD);
 
     })
 }
